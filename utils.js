@@ -19,13 +19,18 @@ function getPostData(req) {
       req.on("end", () => {
         resolve(body);
       });
-    } catch (error) {
-      reject(error);
+    } catch (err) {
+      reject(err);
     }
   });
+}
+
+function test(val) {
+  return typeof val === "string" ? val.capitalize() : val;
 }
 
 module.exports = {
   writeDataToFile,
   getPostData,
+  test,
 };
