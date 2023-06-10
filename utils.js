@@ -26,7 +26,7 @@ function getPostData(req) {
 }
 
 function test(val) {
-  return typeof val === "string" ? val.capitalize() : val;
+  console.log(typeof val);
 }
 
 module.exports = {
