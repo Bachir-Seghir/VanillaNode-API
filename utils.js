@@ -26,7 +26,7 @@ function getPostData(req) {
 }
 
 function test(val) {
-  return typeof val === "number" ? val.toString() : val;
+  console.log(typeof val);
 }
 
 module.exports = {
