@@ -25,10 +25,6 @@ function getPostData(req) {
   });
 }
 
-function test(val) {
-  console.log(typeof val);
-}
-
 module.exports = {
   writeDataToFile,
   getPostData,
