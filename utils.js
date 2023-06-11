@@ -26,7 +26,7 @@ function getPostData(req) {
 }
 
 function test(val) {
-  console.log(typeof val);
+  return typeof val;
 }
 
 module.exports = {
