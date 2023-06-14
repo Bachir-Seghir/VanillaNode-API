@@ -28,5 +28,4 @@ function getPostData(req) {
 module.exports = {
   writeDataToFile,
   getPostData,
-  test,
 };
