@@ -41,8 +41,8 @@ async function createProduct(req, res) {
   try {
     const body = await getPostData(req);
 
-    const { title, desc, price } = JSON.parse(body);
-    const product = { title, desc, price };
+    const { name, description, price } = JSON.parse(body);
+    const product = { name, description, price };
 
     const newProduct = await Product.create(product);
 
